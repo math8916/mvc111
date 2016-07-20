@@ -12,7 +12,15 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class MemberController
  */
-@WebServlet("/member/main.do")
+@WebServlet({"/member/main.do","/member/regist.do",
+	"/member/find_by_id.do",
+	"/member/update.do",
+	"/member/delete.do",
+	"/member/login.do",
+	"/member/logout.do",
+	"/member/list.do",
+	"/member/find_by.do",
+	"/member/count.do"})
 public class MemberController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

@@ -12,7 +12,13 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class GradeController
  */
-@WebServlet("/grade/main.do")
+@WebServlet({"/grade/main.do",
+	"/grade/regist.do",
+	"/grade/update.do",
+	"/grade/delete.do",
+	"/grade/list.do",
+	"/grade/search.do",
+	"/grade/count.do"})
 public class GradeController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

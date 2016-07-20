@@ -12,7 +12,15 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class BankController
  */
-@WebServlet("/bank/main.do")
+@WebServlet({"/bank/main.do",
+	"/bank/regist.do",
+	"/bank/deposit.do",
+	"/bank/withdraw.do",
+	"/bank/update.do",
+	"/bank/delete.do",
+	"/bank/list.do",
+	"/bank/search.do",
+	"/bank/count.do"})
 public class BankController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
